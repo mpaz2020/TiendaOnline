@@ -1,0 +1,13 @@
+django-admin startproject TiendaOnline
+cd TiendaOnline\
+
+python manage.py startapp gestionPedidos
+
+python manage.py check gestionPedidos
+python manage.py makemigrations
+python manage.py sqlmigrate gestionPedidos 0001
+python manage.py shell
+
+instalar postgresql
+
+pip install psycopg2
