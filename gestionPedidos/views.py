@@ -48,7 +48,7 @@ def contacto(request):
             infForm = miFormulario.cleaned_data
 
             send_mail(infForm['asunto'], infForm['mensaje'], infForm.get(
-                'email', ''), ['medardo.paz@tgiperu.com'],)
+                'email', ''), [''],)
 
             return render(request, "gracias.html")
 
